@@ -1,0 +1,167 @@
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a:visited {
+    color: inherit; /* Mantém a cor do texto padrão do elemento pai */
+    color: aliceblue;
+}
+
+body{
+    background-image: url(img/fundo_tela_principal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    padding: 24px 15px 30px;
+}
+
+.menu_navegação{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+    gap: 30%;
+    margin: 0% 0% 0% 5%;
+}
+
+.navegação{
+    font-size: 90%;
+    display: flex;
+    font-weight:600;
+    color: white
+    ;
+    
+}
+
+.CADASTRO{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 90%;
+    font-weight:600;
+    display: flex;
+    flex-direction: row;  /*UTILIZAR A MESMA LINHA DENTRO DO PAI */
+    align-items: center; /*COMO QUERO QUE FICA ALINHADO*/
+    justify-content: space-evenly; /* DISTANCIA DOS ITENS DENTRO DO PAI*/
+    width: 250px;
+    
+}
+
+.usuario{
+    height: 30px
+    
+}
+
+
+.logo_branca{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8% 0% 0% 0%;
+
+}
+
+.LOGO{
+    width: 30%;
+    
+}
+
+.mao_robo{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content:flex-end;
+    width: 100%;
+}
+
+.robo{
+    width: 60%;
+    
+}
+
+/*-------------------ANIMAÇÃO--------------------*/
+
+@keyframes rotateGradient {
+    0% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .CADASTRO_LOGIN {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background: linear-gradient(to left, #9b5de5, #f15bb5, #fc7df1, #a57ad8);
+    background-size: 200% 200%;
+    color: white;
+    text-align: center;
+    animation: rotateGradient 5s linear infinite;
+    transition: background-color 0.3s ease;
+  }
+  
+  .CADASTRO_LOGIN:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Deixa um pouco mais clara ao passar o mouse */
+  }
+
+.LOGO {
+    animation-name: bounce-top;
+    animation-duration: 5s; /* Alterado para 5 segundos */
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite; /* Repetir infinitamente */
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes bounce-top {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-24px);
+    }
+    55% {
+        transform: translateY(0);
+    }
+    65% {
+        transform: translateY(-12px);
+    }
+    75% {
+        transform: translateY(0);
+    }
+    82% {
+        transform: translateY(-6px);
+    }
+    87% {
+        transform: translateY(0);
+    }
+    93% {
+        transform: translateY(-4px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+

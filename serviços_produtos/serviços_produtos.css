@@ -1,0 +1,187 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a:visited {
+    color: inherit; /* Mantém a cor do texto padrão do elemento pai */
+    color: aliceblue;
+}
+
+a{
+    color: aliceblue;
+}
+
+body{
+    background-color:rgb(19, 18, 24);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    padding: 24px 15px 30px;
+}
+
+.memu_navegação{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+    gap: 30%;
+    margin: 0% 0% 0% 5%;
+}
+
+.navegação{
+    font-size: 90%;
+    display: flex;
+    font-weight:600
+    
+}
+
+.CADASTRO{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 90%;
+    font-weight:600;
+    display: flex;
+    flex-direction: row;  /*UTILIZAR A MESMA LINHA DENTRO DO PAI */
+    align-items: center; /*COMO QUERO QUE FICA ALINHADO*/
+    justify-content: space-evenly; /* DISTANCIA DOS ITENS DENTRO DO PAI*/
+    width: 250px;
+    
+}
+
+.usuario{
+    height: 30px
+    
+}
+
+/* ----------------- MAIN --------------------*/
+
+.MARKETING, .PRODUTOS_DIGITAIS{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    gap: 05%;
+    padding: 0% 0% 3% 0%;
+}
+
+.logo_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.logo_branca{
+    width: 18%;
+}
+
+.titulo_produto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(250, 250, 250);
+    padding: 1% 10% 3% 10%;
+}
+
+/*-------------------FLIP-CARD-------------------*/
+
+.card {
+    width: 250px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card:hover .content {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.front {
+    background-color: #1B1725;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0% 0% 0% 10%;
+}
+
+.back {
+    background-color: #00000F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+}
+
+.icone1{
+    width: 30%;
+    padding: 0% 0% 20%;
+}
+
+.titulo_card {
+    font-size: 20px;
+    color: white;
+}
+
+.text_card {
+    color: white;
+    font-size: 16px;
+    text-align:left;
+    padding: 8%;
+}
+
+/*-------------------ANIMAÇÃO--------------------*/
+
+@keyframes rotateGradient {
+    0% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .CADASTRO_LOGIN {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background: linear-gradient(to left, #9b5de5, #f15bb5, #fc7df1, #a57ad8);
+    background-size: 200% 200%;
+    color: white;
+    text-align: center;
+    animation: rotateGradient 5s linear infinite;
+    transition: background-color 0.3s ease;
+  }
+  
+  .CADASTRO_LOGIN:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Deixa um pouco mais clara ao passar o mouse */
+  }
+
+  /*-------------footer-----------------*/
